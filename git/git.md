@@ -11,7 +11,6 @@ git checkout target-branch-name
 #Apply the stashed changes to the target branch:
 git stash pop
 ```
-###
 ### To remove cached files from Gitignore
 ```bash
 git rm -r --cached .
@@ -25,20 +24,22 @@ git log
 git ls-files
 ```
 
+<br></br>
+
 ## Git Remote
 ### lists all the remote connections you have to other repositories along with the URLs
 ```bash
 git remote -v 
 ```
-## add remote repository 
+### add remote repository 
 ```bash
 git remote add repository-name git@gitremote-service.com:myremote-repository.git
 ```
-## fetch and merge the content from the existing repository into local repository.
+### fetch and merge the content from the existing repository into local repository.
 ```bash
 git pull repository-name branch-name --allow-unrelated-histories
 ```
-## push to not default remote branch
+### push to not default remote branch
 ```bash
 # adding -u mean this repository will be the default repository in future pushes
 git push -u repository-name branch-name
