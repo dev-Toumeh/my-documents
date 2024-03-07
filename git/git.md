@@ -24,6 +24,14 @@ git log
 git ls-files
 ```
 
+### fix gitignore tracking problem
+```bash
+# WARNING: First commit or stash your current changes, or you will lose them.
+git rm -r --cached .
+git add .
+git commit -m "fixed untracked files"
+```
+
 <br></br>
 
 ## Git Remote
