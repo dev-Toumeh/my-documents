@@ -21,6 +21,8 @@
     - Use `<C-u>` to clear the search filter.
 
 5. **Preview:**
+    - press `Strg + u` Scroll Up in preview window.
+    - press `Strg + d` Scroll down in preview window.
     - Press `p` to preview the selected file without opening it.
     - Use `<C-z>` to toggle preview mode.
 
