@@ -1,31 +1,19 @@
 ### This shows the differences between the current state of the file and the last commit. If you want to see changes that have already been staged for commit, add the --staged option:
-- git diff --staged <file_path>
+  - git diff --staged <file_path>
 
-### To remove cached files from Gitignore
-```bash
-git rm -r --cached .
-```
+### To remove cached file
+  -git rm -r --cached <file name>
+
+
 ### to see commits log
-```bash
-git log
-```
-### to see repository’s Files
-```bash
-git ls-files
-```
+  -git log
 
-### fix gitignore tracking problem
-```bash
-# Adding point to .gitignore could lead to a problem recognizing the files or folders, if you want to add files start with src instead of ./src
-# WARNING: First commit or stash your current changes, or you will lose them.
-git rm -r --cached 
-git add .
-git commit -m "fixed untracked files"
-```
+### to see repository’s Files
+  -git ls-files
+
+
 ### undo File changes
     git checkout -- <file>
-
-
 
 ## Git Remote
 ### lists all the remote connections you have to other repositories along with the URLs
@@ -46,16 +34,20 @@ git pull repository-name branch-name --allow-unrelated-histories
 git push -u repository-name branch-name
 ```
 
-### remove unwanted commints from the remote
-  hints
-  - you need to know which commit you want to move back to it "HEAD~2 or HEAD~3 etc"
-  - the branch should have remote tracking branch associated with it
+### remove unwanted commits from the remote
+#### you need to know which commit you want to move back to it "HEAD~2 or HEAD~3 etc"
+#### the branch should have remote tracking branch associated with it
   - git reset --hard HEAD~<number-of-commit>
   - git push origin <branch-name> --force 
 
+### edit the last commit
+  - git commit --amend --no-edit
+#### if you want to push you should add -f
+    git push --force
 
+### push local branch to the repository and creat remote branch based on it
+- git push -u origin <local-branch-name>
 
-
-
-
-
+## To clone all branches of a repository-name
+    git clone --bare <repository_url>
+    git fetch --all

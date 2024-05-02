@@ -5,3 +5,5 @@
   - sudo EDITOR=vim visudo
   - take the nvim from the path (the path will end with bin) and than add the path to the "Defaults secure_path"
 
+## use sudo with nvim plugins
+ - sudo -E nvim
