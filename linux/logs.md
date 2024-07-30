@@ -8,5 +8,10 @@
      tail -n /path/to/log-file
    - to follow the chnges
     tail -f  /path/to/log-file
+
+
 ### jouralctl
-more advanced, maby check it later
+sudo journalctl -xe
+
+
+

@@ -18,3 +18,13 @@
 
 ## Go to end of the line
 - Ctrl + e
+
+## history search backward
+- Ctrl + p
+
+## history-search forword
+- Ctrl + n
+
+## delete the next word
+- Alt + d
+
