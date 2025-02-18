@@ -11,5 +11,5 @@
 ## start the container if it was created 
 - docker start my-container
 
-
-
+## To list all Docker containers that use the same image
+docker ps -a --filter ancestor=your_image_name --format "{{.ID}}" | xargs docker rm
