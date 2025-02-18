@@ -4,9 +4,6 @@
 ## clear up to the beginning.
 - Ctrl + u
 
-## Remove characters on the left
-- Ctrl + w
-
 ## remove all forward words
 - Ctrl + k
 
@@ -22,9 +19,15 @@
 ## history search backward
 - Ctrl + p
 
-## history-search forword
+## history-search forward
 - Ctrl + n
 
-## delete the next word
+## delete the previews Word
+- Ctrl + w
+
+## delete the next character
 - Alt + d
+
+## delete lines from the bash screen
+- tput cuu1 && tput el && tput cuu1 && tput el
 
