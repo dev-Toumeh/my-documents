@@ -18,7 +18,7 @@ mode "$mode_system" {
 }
 bindsym $mod+Pause mode "$mode_system"
 
-### add the following script to /usr/local/bin 
+### add the following script to /usr/local/bin/i3exit and male sure that the script is executable 
 #!/bin/sh
 lock() {
     i3lock
