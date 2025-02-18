@@ -58,4 +58,8 @@
     - Press `?` to view help documentation for Telescope.
     - Press `q` to close the file browser.
 
+## to install 
+### packeges
+-  ripgrep "use to search with grep"
+-  fd-find "use ass better alternative to search files"
 
